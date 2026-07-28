@@ -5,6 +5,9 @@
 !datasets/raw/.gitkeep
 !datasets/preprocess/.gitkeep
 !datasets/processed/.gitkeep
+!datasets/raw/*.dvc
+!datasets/preprocess/*.dvc
+!datasets/processed/*.dvc
 *.csv
 *.parquet
 
