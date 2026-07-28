@@ -1,0 +1,67 @@
+# ---- Data (versioned by DVC, not Git) ----
+/datasets/raw/**
+/datasets/preprocess/**
+/datasets/processed/**
+!datasets/raw/.gitkeep
+!datasets/preprocess/.gitkeep
+!datasets/processed/.gitkeep
+*.csv
+*.parquet
+
+# ---- DVC ----
+# DVC manages its own cache; don't ignore .dvc files themselves
+/.dvc/cache
+/.dvc/tmp
+
+# ---- Models / artifacts ----
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.h5
+mlruns/
+mlartifacts/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---- Jupyter Notebooks ----
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ---- Environments ----
+.env
+.venv
+env/
+venv/
+ENV/
+.conda/
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Docker ----
+*.log
+
+# ---- Kaggle credentials (never commit these) ----
+kaggle.json
+.kaggle/
+
+# ---- Airflow ----
+airflow.cfg
+airflow.db
+logs/
